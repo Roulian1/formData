@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     fd.append('name', 'Xavier');
     fd.append('ID', 3333);
     fd.append('date_now', current.toLocaleString());
+    fd.append('name',)
 
     console.log(Array.from(fd));
 
@@ -15,28 +16,30 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 // boucle for
 
-    // for (let obj of fd) {
-    //     console.log(obj);
-    // }
+    for (let obj of fd) {
+        console.log(obj);
+    }
 
 // entries iteration
 
-    // for (let pair of fd.entries()) {
-    //     console.log(pair[0]+ ', '+ pair[1]);
-    //  }
+    for (let pair of fd.entries()) {
+        console.log(pair[0]+ ', '+ pair[1]);
+     }
 
 // delete an obj
 
-    // fd.delete('ID');
+fd.delete('ID');
+
+console.log(Array.from(fd));
 
 // get 
 
-    // console.log(fd.get('name'));
+    console.log(fd.get('name'));
 
 // set
 
-    // fd.set('taille', 46);
-    // console.log(fd.get('taille'));
+    fd.set('taille', 46);
+    console.log(fd.get('taille'));
 
 })
 
